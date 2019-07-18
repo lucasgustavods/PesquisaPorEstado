@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Estados do Brasil</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <!-- barra superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#pesquisa"> Pesquisa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSite">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav ml-auto">
+                    <!-- "mr-auto" para alinhar a direita -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guia">Guia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ferramentas">Ferramentas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#autor">Autor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- guia -->
+    <div class="container" id="guia">
+        <div class="jumbotron mt-5">
+            <h1 class="display-4"><img src="./img/brazil-map.png" class="img-fluid" alt="brazilMini">GUIA</h1>
+            <p class="lead">Pesquise sobre determinado estado brasileiro para saber informações básicas como sigla, nome por extenso, capital e região.</p>
+            <hr class="my-4">
+            <p>É facil, vá até a barra de pesquisa digite o nome e clique em pesquisar.</p>
+        </div>
+    </div>
+
+
+    <!-- pesquisa -->
+    <div class="contact-form" id="pesquisa">
+        <div class="container">
+            <div class="mx-auto" style="width: 300px;">
+                <form name=verification>
+                    <div class="row">
+                        <div class="right">
+                            <div class="form-group">
+                                <img src="./img/brazilMini.gif" class="img-fluid" alt="brazilSilhouete">
+                                <input list="encodings" type="text" class="form-control form-control-lg" placeholder="Pesquisar estado" name=text>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-outline-success btn-light mb-5" value="pesquisaEstado" onclick="inputEstado()">Verificar </button>
+            </div>
+        </div>
+        <datalist id="encodings">
+                            <option value ="Acre" ></option>
+                            <option value ="Alagoas" ></option>
+                            <option value ="Amapá" ></option>
+                            <option value ="Amazonas" ></option>
+                            <option value ="Bahia" ></option>
+                            <option value ="Ceará" ></option>
+                            <option value ="Espírito Santo" ></option>
+                            <option value ="Goiás" ></option>
+                            <option value ="Maranhão" ></option>
+                            <option value ="Mato Grosso do Sul" ></option>
+                            <option value ="Mato Grosso" ></option>
+                            <option value ="Minas Gerais" ></option>
+                            <option value ="Pará" ></option>
+                            <option value ="Paraíba" ></option>
+                            <option value ="Paraná" ></option>
+                            <option value ="Pernambuco" ></option>
+                            <option value ="Piauí" ></option>
+                            <option value ="Rio de Janeiro" ></option>
+                            <option value ="Rio Grande de Norte" ></option>
+                            <option value ="Rio Grande do Sul" ></option>
+                            <option value ="Rondônia" ></option>
+                            <option value ="Roraima" ></option>
+                            <option value ="Santa Catarina" ></option>
+                            <option value ="São Paulo" ></option>
+                            <option value ="Sergipe" ></option>
+                            <option value ="Tocantins" ></option>
+                        </datalist>
+    </div>
+
+    <!-- Ferramentas -->
+    <div class="container" id="ferramentas">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">FERRAMENTAS</h1>
+            <p class="lead text-center">Tecnologias utilizadas:</p>
+            <hr class="my-4">
+            <div class="row align-items-center justify-content-center">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="./img/html.png" class="img-fluid" alt="html5">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="./img/css.png" class="img-fluid" alt="css3">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="./img/js.png" class="img-fluid" alt="javascript">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="./img/bootstrap.png" class="img-fluid" alt="bootstrap4">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+							</a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+							</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nome -->
+    <div class="container" id="autor">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-3">--------------</h1>
+                <img src="./img/perfil.png" alt="perfil" class="rounded-circle">
+                <p>Lucasgustavods</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- add Javasscript file from js file -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/pesquisarEstado.js"></script>
+
+</body>
+
+</html>

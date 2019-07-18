@@ -1,0 +1,25 @@
+.carousel 
+{
+  width:240px;
+  height:255px;
+}
+
+.carousel-control-next
+{
+    filter: invert(100%);
+}
+
+.carousel-control-prev 
+{
+    filter: invert(100%);
+}
+
+.nav-link , .navbar-brand
+{
+  cursor: pointer;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
